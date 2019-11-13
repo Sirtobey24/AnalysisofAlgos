@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package Project1;
+
 /*
  * @author Sean de Silva and Alejandro Cruz
  * @project AnalysisofAlgos

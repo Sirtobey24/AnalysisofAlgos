@@ -1,3 +1,5 @@
+package Project1;
+
 /*
  * @author Sean de Silva, Alejandro Cruz
  * @project AnalysisofAlgos
