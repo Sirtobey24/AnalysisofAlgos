@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @project AnalysisofAlgos Project 2
  * @date 11/7/2019
  */
-public class Graphs
+public class Edges
 {
 
 }
