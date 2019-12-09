@@ -1,12 +1,11 @@
 package Project2;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
 /**
- * @author Sean de Silva, Felipe de la Torre
+ * @author Sean de Silva, Felipe De La Torre
  * @project AnalysisofAlgos Project 2
  * @date 12/5/2019
  */
@@ -46,7 +45,8 @@ public class DijkstraAlgorithm
 
             }
             // catch if the user input is not an integer
-            catch(NumberFormatException e){
+            catch (NumberFormatException e)
+            {
                 System.out.println("Input was not a positive integer, please try again.");
             }
             // catch if the user input was a negative number
@@ -68,9 +68,9 @@ public class DijkstraAlgorithm
         {
             for (int j = i + 1; j < numofnodes; j++)
             {
-                prob = r.nextInt((4) + 1);
+                prob = r.nextInt(100);
 
-                if ((prob >= 1) && (i != j))
+                if ((prob >= 25) && (i != j))
                 {
                     weight = r.nextInt((numofnodes * 5) + 1);
                     if (weight != 0 && Graph[j][i] == 0 && Graph[i][j] == 0)
@@ -82,7 +82,15 @@ public class DijkstraAlgorithm
                     }
                 }
             }
+
+            if (edgelist.isEmpty())
+            {
+                System.out.println("No edges were made.");
+                break;
+            }
         }
+
+
         GraphOutput(numofnodes);
         NodeInput(Graph, numofnodes);
     }
@@ -256,7 +264,7 @@ public class DijkstraAlgorithm
             return;
         printPath(parent[currentNode], parent);
         System.out.print(currentNode);
-        if(currentNode != source)
+        if (currentNode != source)
             System.out.print(" - ");
     }
 

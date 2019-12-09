@@ -1,8 +1,8 @@
 package Project2;
 
 /**
- * @author Sean de Silva, Felipe de la Torre
- * @project Project 2
+ * @author Sean de Silva, Felipe De La Torre
+ * @project AnalysisofAlgos Project 2
  * @date 12/1/2019
  */
 public class Edges
